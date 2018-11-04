@@ -12,30 +12,30 @@ client.on('ready', () => {
 ** Youkai
 ** Auteur : MDB
 */
-function Youkai(name, description) {
+function Youkai(newname, newdescription) {
 	
 	// Variables
-	this.name = name;
-	this.description = description;
+	var name = newname;
+	var description = newdescription;
 	
 	// Getter
 	
 	function getName() {
-		return this.name;
+		return name;
 	}
 	
 	function getDescription() {
-		return this.description;
+		return description;
 	}
 	
 	// Setter
 	
-	function setName(name) {
-		this.name = name;
+	function setName(newname) {
+		name = newname;
 	}
 	
-	function setDescription(description) {
-		this.description = description;
+	function setDescription(newdescription) {
+		description = newdescription;
 	}
 }
 
