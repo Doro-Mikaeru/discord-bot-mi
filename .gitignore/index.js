@@ -12,32 +12,26 @@ client.on('ready', () => {
 ** Youkai
 ** Auteur : MDB
 */
-function Youkai(newname, newdescription) {
-	
-	// Variables
-	var name = newname;
-	var description = newdescription;
-	
-	// Getter
-	
-	function getName() {
-		return name;
-	}
-	
-	function getDescription() {
-		return description;
-	}
-	
-	// Setter
-	
-	function setName(newname) {
-		name = newname;
-	}
-	
-	function setDescription(newdescription) {
-		description = newdescription;
-	}
-}
+function Youkai() {//from   w  ww. ja  va2  s  .c om
+   var name = 'hello';
+	var description = 'hallo';
+   function setYoukai(newname, newdescription) {
+      if (!newname || !newdescription) {
+         throw new Error('cannot set empty message');
+      }
+   else {
+      name = newname;
+	   description = newdescription;
+	   }
+   }
+   function getYoukai() {
+      return name + " - " + description;
+   }
+   return {
+      setYoukai: setYoukai,
+      getYoukai: getYoukai
+   }; 
+} 
 
 /*
     Abumi-kuchi - tsukumogami d'un étrier.
@@ -764,8 +758,9 @@ client.on("message", message => {
 
 	// Essai
 	if(message.content.startsWith(prefix + "youkai")) {
-		var testyoukai = new Youkai("Yamatengu", "Démon de la montagne");
-		message.channel.send(testyoukai.getName() + " - " + testyoukai.getDescription());
+		var testyoukai = new Youkai();
+		testyoukai.setYoukai("Yamatengu", "Démon de la montagne");
+		message.channel.send(testyoukai.getYoukai());
 	}
 	
 	// Aide
