@@ -13,24 +13,25 @@ client.on('ready', () => {
 ** Auteur : MDB
 */
 function Youkai() {//from   w  ww. ja  va2  s  .c om
-   var name = 'hello';
-	var description = 'hallo';
-   function setYoukai(newname, newdescription) {
-      if (!newname || !newdescription) {
-         throw new Error('cannot set empty message');
-      }
-   else {
-      name = newname;
-	   description = newdescription;
-	   }
-   }
-   function getYoukai() {
-      return name + " - " + description;
-   }
-   return {
-      setYoukai: setYoukai,
-      getYoukai: getYoukai
-   }; 
+	var name = '';
+	var description = '';
+	
+	function setYoukai(newname, newdescription) {
+		if (!newname || !newdescription) {
+			throw new Error('cannot set empty message');
+		}
+		else {
+			name = newname;
+			description = newdescription;
+		}
+	}
+	function getYoukai() {
+		return name + " - " + description;
+	}
+	return {
+		setYoukai: setYoukai,
+		getYoukai: getYoukai
+	}; 
 } 
 
 /*
@@ -756,12 +757,12 @@ client.on("message", message => {
 	
 	// Commandes avec le préfixe
 
-	// Essai
-	if(message.content.startsWith(prefix + "youkai")) {
+	// Essai : réussite
+	/*if(message.content.startsWith(prefix + "youkai")) {
 		var testyoukai = new Youkai();
 		testyoukai.setYoukai("Yamatengu", "Démon de la montagne");
 		message.channel.send(testyoukai.getYoukai());
-	}
+	}*/
 	
 	// Aide
 	if(message.content.startsWith(prefix + "help")) {
