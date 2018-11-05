@@ -49,8 +49,8 @@ function Person(firstName, lastName) {
         this.lastName = nom;
     };
 	this.getName = function () {
-			return this.firstname;
-	}
+			return this.firstName;
+	};
 } 
 
 //YoukaiDex
