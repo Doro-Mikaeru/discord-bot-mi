@@ -12,54 +12,32 @@ client.on('ready', () => {
 ** Youkai
 ** Auteur : MDB
 */
-function Youkai() {
-	var name = '';
-	var description = '';
-	
-	function setYoukai(newname, newdescription) {
-		if (!newname || !newdescription) {
-			throw new Error('cannot set empty Youkai');
-		}
-		else {
-			name = newname;
-			description = newdescription;
-		}
-	}
-	function getYoukai() {
-		return name + " - " + description;
-	}
-	function getName() {
-		return name;
-	}
-	function getDescription() {
-		return description;
-	}
-	return {
-		setYoukai: setYoukai,
-		getYoukai: getYoukai,
-		getName: getName,
-		getDescription: getDescription
-	}; 
-}
 
-function Person(firstName, lastName) {
-    this.firstName = firstName; 
-    this.lastName = lastName;
-    this.changeName = function (nom) {
-        this.lastName = nom;
+function Youkai(name, shortDescription) {
+	
+    this.name = name; 
+    this.shortDescription = shortDescription;
+	
+    this.setName = function (newName) {
+		this.name = newName;
     };
+    this.setShortDescription = function (newShortDescription) {
+		this.shortDescription = newShortDescription;
+    };
+	
 	this.getName = function () {
-			return this.firstName;
+		return this.name;
+	};
+	this.getShortDescription = function () {
+		return this.shortDescription;
 	};
 } 
 
 //YoukaiDex
-var youkaidex = new Array();
-youkaidex.push(new Youkai().setYoukai("Abumi-kuchi", "Tsukumogami d'un étrier"));
-youkaidex.push(new Youkai().setYoukai("Abura-akago", "Enfant fantôme qui lèche l'huile des lampes à huile"));
-
-//PersonDex
-var persondex = [new Person("jean", "richard"), new Person("paul", "po")];
+var youkaidex = [
+	new Youkai("Abumi-kuchi", "Tsukumogami d'un étrier"),
+	new Youkai("Abura-akago", "Enfant fantôme qui lèche l'huile des lampes à huile")
+];
 
 /*
     Abumi-kuchi - tsukumogami d'un étrier.
@@ -782,55 +760,20 @@ client.on("message", message => {
 	// Préfixe
 	var prefix = '=';
 	
-	// Commandes avec le préfixe
-
-	// Essai
+	// Commandes avec le préfixe	  
+	
+	// =youkaidex
 	if(message.content.startsWith(prefix + "youkaidex")) {
 		try {
-			var youkaiNameList = "**Index Youkai**\n";
-			var erreur = "1";
+			var youkaiList = "**Index Youkai**\n";
 			for (var i = 0; i < youkaidex.length; i++) {
-				erreur += "a";
 				var currentYoukai = youkaidex[i];
-				erreur += "v";
-				var test = currentYoukai.getName();
-				erreur += "w";
-				youkaiNameList += currentYoukai.getName() + "\n";
-				erreur += "b";
+				youkaiList += currentYoukai.getName() + "\n";
 			}
-
-			//var testyoukai = new Youkai();
-			//testyoukai.setYoukai("Yamatengu", "Démon de la montagne");
-			erreur += "c";
-			message.channel.send(youkaiNameList);
+			message.channel.send(youkaiList);
 		}
 		catch {
-			message.channel.send("Problème de codage : " + erreur);
-		}
-	}
-	  
-	  
-	if(message.content.startsWith(prefix + "persondex")) {
-		try {
-			var maliste = "**Index Youkai**\n";
-			var erreur = "1";
-			for (var i = 0; i < persondex.length; i++) {
-				erreur += "a";
-				var currentYoukai = persondex[i];
-				erreur += "v";
-				var test = currentYoukai.getName();
-				erreur += "w";
-				maliste += currentYoukai.getName() + "\n";
-				erreur += "b";
-			}
-
-			//var testyoukai = new Youkai();
-			//testyoukai.setYoukai("Yamatengu", "Démon de la montagne");
-			erreur += "c";
-			message.channel.send(maliste);
-		}
-		catch {
-			message.channel.send("Problème de codage : " + erreur);
+			message.channel.send("Problème avec le Youkaidex");
 		}
 	}
 	
