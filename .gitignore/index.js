@@ -780,6 +780,8 @@ client.on("message", message => {
 				erreur += "a";
 				var currentYoukai = youkaidex[i];
 				erreur += "v";
+				var test = currentYoukai.getName();
+				erreur += "w";
 				youkaiNameList += currentYoukai.getName() + "\n";
 				erreur += "b";
 			}
