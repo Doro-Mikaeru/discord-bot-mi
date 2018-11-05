@@ -778,7 +778,9 @@ client.on("message", message => {
 			var erreur = "1";
 			for (var i = 0; i < youkaidex.length; i++) {
 				erreur += "a";
-				youkaiNameList += youkaidex[i].getName() + "\n";
+				var currentYoukai = youkaidex[i];
+				erreur += "v";
+				youkaiNameList += currentYoukai.getName() + "\n";
 				erreur += "b";
 			}
 
