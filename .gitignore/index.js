@@ -44,8 +44,8 @@ function Youkai() {
 
 //YoukaiDex
 var youkaidex = new Array();
-youkaidex.push(Youkai().setYoukai("Abumi-kuchi",		"Tsukumogami d'un étrier"));
-youkaidex.push(Youkai().setYoukai("Abura-akago",		"Enfant fantôme qui lèche l'huile des lampes à huile"));
+youkaidex.push(new Youkai().setYoukai("Abumi-kuchi", "Tsukumogami d'un étrier"));
+youkaidex.push(new Youkai().setYoukai("Abura-akago", "Enfant fantôme qui lèche l'huile des lampes à huile"));
 // ci-dessus : mettre new Youkai ou Youkai tout court ?
 
 /*
@@ -773,14 +773,19 @@ client.on("message", message => {
 
 	// Essai
 	if(message.content.startsWith(prefix + "youkaidex")) {
-		var youkaiNameList = "**Index Youkai**\n";
-		for (var i = 0, nbYoukai = youkaidex.length; i < nbYoukai; i++) {
-			youkaiNameList = youkaiNameList + youkaidex[i].getName() + "\n";
+		try {
+			var youkaiNameList = "**Index Youkai**\n";
+			for (var i = 0; i < youkaidex.length; i++) {
+				youkaiNameList += youkaidex[i].getName() + "\n";
+			}
+
+			//var testyoukai = new Youkai();
+			//testyoukai.setYoukai("Yamatengu", "Démon de la montagne");
+			message.channel.send(youkaiNameList);
 		}
-		
-		//var testyoukai = new Youkai();
-		//testyoukai.setYoukai("Yamatengu", "Démon de la montagne");
-		message.channel.send(youkaiNameList);
+		catch {
+			message.channel.send("Problème de codage");
+		}
 	}
 	
 	// Aide
