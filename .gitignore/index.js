@@ -36,14 +36,17 @@ function Youkai() {
 	}
 	return {
 		setYoukai: setYoukai,
-		getYoukai: getYoukai
+		getYoukai: getYoukai,
+		getName: getName,
+		getDescription: getDescription
 	}; 
 }
 
 //YoukaiDex
 var youkaidex = new Array();
-youkaidex.push(new Youkai().setYoukai("Abumi-kuchi",		"Tsukumogami d'un étrier"));
-youkaidex.push(new Youkai().setYoukai("Abura-akago",		"Enfant fantôme qui lèche l'huile des lampes à huile"));
+youkaidex.push(Youkai().setYoukai("Abumi-kuchi",		"Tsukumogami d'un étrier"));
+youkaidex.push(Youkai().setYoukai("Abura-akago",		"Enfant fantôme qui lèche l'huile des lampes à huile"));
+// ci-dessus : mettre new Youkai ou Youkai tout court ?
 
 /*
     Abumi-kuchi - tsukumogami d'un étrier.
