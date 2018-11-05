@@ -12,13 +12,13 @@ client.on('ready', () => {
 ** Youkai
 ** Auteur : MDB
 */
-function Youkai() {//from   w  ww. ja  va2  s  .c om
+function Youkai() {
 	var name = '';
 	var description = '';
 	
 	function setYoukai(newname, newdescription) {
 		if (!newname || !newdescription) {
-			throw new Error('cannot set empty message');
+			throw new Error('cannot set empty Youkai');
 		}
 		else {
 			name = newname;
@@ -34,10 +34,10 @@ function Youkai() {//from   w  ww. ja  va2  s  .c om
 	}; 
 }
 
-var youkaidex = [
-	new Youkai().setYoukai("Abumi-kuchi",		"Tsukumogami d'un étrier"),
-	new Youkai().setYoukai("Abura-akago",		"Enfant fantôme qui lèche l'huile des lampes à huile")
-	];
+//YoukaiDex
+var youkaidex = new Array();
+youkaidex.push(new Youkai().setYoukai("Abumi-kuchi",		"Tsukumogami d'un étrier"));
+youkaidex.push(new Youkai().setYoukai("Abura-akago",		"Enfant fantôme qui lèche l'huile des lampes à huile"));
 
 /*
     Abumi-kuchi - tsukumogami d'un étrier.
