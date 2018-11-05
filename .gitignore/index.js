@@ -37,7 +37,7 @@ function Youkai() {//from   w  ww. ja  va2  s  .c om
 var youkaidex = [
 	new Youkai().setYoukai("Abumi-kuchi",		"Tsukumogami d'un étrier"),
 	new Youkai().setYoukai("Abura-akago",		"Enfant fantôme qui lèche l'huile des lampes à huile")
-	]
+	];
 
 /*
     Abumi-kuchi - tsukumogami d'un étrier.
@@ -762,10 +762,10 @@ client.on("message", message => {
 	
 	// Commandes avec le préfixe
 
-	// Essai : réussite
+	// Essai
 	if(message.content.startsWith(prefix + "youkaidex")) {
+		var youkaiNameList = "**Index Youkai**\n";
 		for (var i = 0, nbYoukai = youkaidex.length; i < nbYoukai; i++) {
-			var youkaiNameList = "";
 			youkaiNameList = youkaiNameList + youkaidex[i].getName() + "\n";
 		}
 		
