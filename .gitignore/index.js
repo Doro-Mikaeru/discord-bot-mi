@@ -32,7 +32,12 @@ function Youkai() {//from   w  ww. ja  va2  s  .c om
 		setYoukai: setYoukai,
 		getYoukai: getYoukai
 	}; 
-} 
+}
+
+var youkaidex = [
+	new Youkai().setYoukai("Abumi-kuchi",		"Tsukumogami d'un étrier"),
+	new Youkai().setYoukai("Abura-akago",		"Enfant fantôme qui lèche l'huile des lampes à huile")
+	]
 
 /*
     Abumi-kuchi - tsukumogami d'un étrier.
@@ -758,11 +763,16 @@ client.on("message", message => {
 	// Commandes avec le préfixe
 
 	// Essai : réussite
-	/*if(message.content.startsWith(prefix + "youkai")) {
-		var testyoukai = new Youkai();
-		testyoukai.setYoukai("Yamatengu", "Démon de la montagne");
-		message.channel.send(testyoukai.getYoukai());
-	}*/
+	if(message.content.startsWith(prefix + "youkaidex")) {
+		for (var i = 0, nbYoukai = youkaidex.length; i < nbYoukai; i++) {
+			var youkaiNameList = "";
+			youkaiNameList = youkaiNameList + youkaidex[i].getName() + "\n";
+		}
+		
+		//var testyoukai = new Youkai();
+		//testyoukai.setYoukai("Yamatengu", "Démon de la montagne");
+		message.channel.send(youkaiNameList);
+	}
 	
 	// Aide
 	if(message.content.startsWith(prefix + "help")) {
