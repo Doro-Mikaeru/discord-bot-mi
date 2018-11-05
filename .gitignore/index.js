@@ -28,6 +28,12 @@ function Youkai() {
 	function getYoukai() {
 		return name + " - " + description;
 	}
+	function getName() {
+		return name;
+	}
+	function getDescription() {
+		return description;
+	}
 	return {
 		setYoukai: setYoukai,
 		getYoukai: getYoukai
