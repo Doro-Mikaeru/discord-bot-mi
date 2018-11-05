@@ -775,16 +775,20 @@ client.on("message", message => {
 	if(message.content.startsWith(prefix + "youkaidex")) {
 		try {
 			var youkaiNameList = "**Index Youkai**\n";
+			var erreur = "1";
 			for (var i = 0; i < youkaidex.length; i++) {
+				erreur += "a";
 				youkaiNameList += youkaidex[i].getName() + "\n";
+				erreur += "b";
 			}
 
 			//var testyoukai = new Youkai();
 			//testyoukai.setYoukai("Yamatengu", "Démon de la montagne");
+			erreur += "c";
 			message.channel.send(youkaiNameList);
 		}
 		catch {
-			message.channel.send("Problème de codage");
+			message.channel.send("Problème de codage : " + erreur);
 		}
 	}
 	
