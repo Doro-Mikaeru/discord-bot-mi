@@ -773,12 +773,25 @@ client.on("message", message => {
 	// =youkaidex
 	if(message.content.startsWith(prefix + "youkaidex")) {
 		try {
-			var youkaiList = "**Index Youkai**\n";
-			for (var i = 0; i < youkaidex.length; i++) {
-				var currentYoukai = youkaidex[i];
-				youkaiList += currentYoukai.getName() + "\n";
+			
+			// Récupération des arguments
+			var args = message.content.slice(prefix.length).trim().split(/ +/g);
+			var command = args.shift().toLowerCase();
+			// Avec ou sans arguments ?
+			if (args.length > 0) {
+				var nameBeginning = args[0];
+				var youkaiList = "**Index Youkai commençant par " + nameBeginning + "**\n";
+				for (var i = 0; i < youkaidex.length; i++) {
+					var currentYoukai = youkaidex[i];
+					if (currentYoukai.getName().startsWith(nameBeginning)) {
+						youkaiList += currentYoukai.getName() + "\n";
+					}
+					else {
+						i = youkaidex.length;
+					}
+				}
+				message.channel.send(youkaiList);
 			}
-			message.channel.send(youkaiList);
 		}
 		catch {
 			message.channel.send("Problème avec le Youkaidex");
