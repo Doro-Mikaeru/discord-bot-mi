@@ -2,6 +2,10 @@ const Discord = require('discord.js');
 const { Client, Attachment } = require('discord.js');
 const client = new Discord.Client();
 
+// Récupérer les données des utilisateurs qui se trouvent dans le fichier UserData.json
+var fs = require('fs');
+var userData = JSON.parse(fs.readFileSync('UserData.json', 'utf8'));
+
 client.on('ready', () => {
   console.log('Prêt !');
 });
@@ -710,9 +714,28 @@ client.on("message", message => {
 	// Préfixe
 	var prefix = '=';
 	
-	// Commandes avec le préfixe	  
+	// Commandes avec le préfixe
 	
-	// =youkaidex
+	// =devenirChercheur
+	if(message.content.startsWith(prefix + "devenirChercheur")) {
+		try {
+			if (!userData[message.author.id]) {
+				userData[message.author.id] = {
+					monnaie = 0,
+					youkaiCollection = []
+				}
+				fs.writeFile('userData.json', JSON.stringify(userData), (err) => {
+					if (err) {
+						message.channel.send("Je n'arrive pas à vous ajouter à la liste des chercheurs.");
+					}
+				});
+			}
+		}
+		catch {
+		}
+	}
+	
+	// =youkaidex + Début du nom du youkai recherché
 	if(message.content.startsWith(prefix + "youkaidex")) {
 		try {
 			
