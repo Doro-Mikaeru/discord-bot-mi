@@ -796,12 +796,15 @@ client.on("message", message => {
 	
 	// =lewdneko
 	if(message.content.startsWith(prefix + "lewdneko")) {
+		var niveau = "A";
 		try {
 			if (message.channel.nsfw) {
 				var randomlewdneko = superagent.get('https://nekos.life/api/v2/img/lewd');
+				niveau += "B";
 				const lewdneko = new Discord.RichEmbed()
 					.setImage(randomlewdneko.body.url)
 					.setColor('RANDOM')
+				niveau += "C";
 				message.channel.send(lewdneko);
 			}
 			else {
