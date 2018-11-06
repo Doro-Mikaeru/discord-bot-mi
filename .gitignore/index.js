@@ -216,7 +216,7 @@ var youkaidex = [
 	new Youkai("Innenbi", "yōkai de feu lié à la rancune"),
 	new Youkai("Inugami", "Chien-esprit créé, adoré et employé par une famille au moyen de la sorcellerie"),
 	new Youkai("Inugami Gyoubu", "un type de tanuki"),
-	new Youkai("Ippon'ashi", "ogre unijambiste apparaissant à Obaminé pour dévorer les voyageurs
+	new Youkai("Ippon ashi", "ogre unijambiste apparaissant à Obamine pour dévorer les voyageurs"),
 	new Youkai("Ippon-datara", "grande créature de forme humaine, avec une seule jambe et un seul œil"),
 	new Youkai("Ishinagenjo", "yōkai féminin de la mer"),
 	new Youkai("Iso Onna", "femme attaquant les bateaux à l’amarre. Appelée aussi Isonagijo"),
