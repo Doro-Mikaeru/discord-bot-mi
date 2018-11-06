@@ -798,9 +798,9 @@ client.on("message", message => {
 	if(message.content.startsWith(prefix + "lewdneko")) {
 		try {
 			if (message.channel.nsfw) {
-				var randomelewdneko = superagent.get('https://nekos.life/api/v2/img/lewd')
+				var randomelewdneko = superagent.get('https://nekos.life/api/v2/img/lewd');
 				const lewdneko = new Discord.RichEmbed()
-					.setImage(response.body.url)
+					.setImage(randomelewdneko.body.url)
 					.setColor('RANDOM')
 				message.channel.send(lewdneko);
 			}
