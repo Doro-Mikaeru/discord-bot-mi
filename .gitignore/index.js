@@ -718,7 +718,7 @@ client.on("message", message => {
 	// Commandes avec le préfixe
 	
 	// =devenirChercheur
-	if(message.content.startsWith(prefix + "devenirChercheur")) {
+	/*if(message.content.startsWith(prefix + "devenirChercheur")) {
 		try {
 			if (!userData[message.author.id]) {
 				userData[message.author.id] = {
@@ -733,7 +733,7 @@ client.on("message", message => {
 		}
 		catch {
 		}
-	}
+	}*/
 	
 	// =youkaidex + Début du nom du youkai recherché
 	if(message.content.startsWith(prefix + "youkaidex")) {
