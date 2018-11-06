@@ -799,7 +799,7 @@ client.on("message", message => {
 		var problem = "";
 		try {
 			if (message.channel.nsfw) {
-				var problem = "a";
+				problem = "a";
 				var randomlewdneko = superagent.get('https://nekos.life/api/v2/img/lewd');
 				problem += "b";
 				const lewdneko = new Discord.RichEmbed();
