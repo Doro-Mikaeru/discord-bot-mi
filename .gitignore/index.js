@@ -812,7 +812,7 @@ client.on("message", message => {
 			}
 		}
 		catch {
-			message.channel.send("Erreur");
+			message.channel.send("Erreur" + niveau);
 		}
 	}
 	
