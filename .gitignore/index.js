@@ -244,8 +244,8 @@ var youkaidex = [
 	new Youkai("Jubokko", "arbre vampire"),
 	new Youkai("Kabukiri kozō", "enfant avec une coupe au bol et vêtu d'un kimono peu ordinaire. Ce serait un tanuki déguisé"),
 	new Youkai("Kabuso", "petit yōkai de la taille d'un chaton qui apparaît dans l'eau. Autre nom de Kawaso"),
-	new Youkai("Kage-onna", "ombre d'une femme projetée par la lumière de la Lune sur la porte coulissante en papier de la maison
-	new Youkai("Kahaku", "autre nom du kappa
+	new Youkai("Kage-onna", "ombre d'une femme projetée par la lumière de la Lune sur la porte coulissante en papier de la maison"),
+	new Youkai("Kahaku", "autre nom du kappa"),
 	new Youkai("Kaifukibō", "yōkai présent dans les douves d'un château dans les montagnes du département d'Okayama"),
 	new Youkai("Kaijin", "l'homme de la mer. Quand il monte à bord, le mieux à faire est de ne pas parler et de rester sans bouger, car autrement il produit une tempête et fait chavirer le bateau"),
 	new Youkai("Kaiyō", "bateau fantôme"),
