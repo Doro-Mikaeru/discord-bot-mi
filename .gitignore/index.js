@@ -800,10 +800,11 @@ client.on("message", message => {
 			if (message.channel.nsfw) {
 				superagent.get('https://nekos.life/api/v2/img/lewd')
 					.end((err, response) => {
-				const lewdembed = new Discord.RichEmbed()
-					.setImage(response.body.url)
-					.setColor('#FF0000')
-				message.channel.send(lewdembed);
+						const lewdembed = new Discord.RichEmbed()
+							.setImage(response.body.url)
+							.setColor('#FF0000')
+						message.channel.send(lewdembed);
+					})
 			}
 			else {
 				message.channel.send('Vous ne pouvez pas utiliser cette commande ici.');
