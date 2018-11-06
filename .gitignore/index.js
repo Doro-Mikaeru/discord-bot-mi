@@ -373,193 +373,52 @@ var youkaidex = [
 	new Youkai("Mu-onna", ""),
 	new Youkai("Musabi", "feu spectral du département de Miyazaki. Il apparaît par paire les soirs de pluie"),
 	new Youkai("Myōbu", "titre parfois donné au kitsune"),
-	new Youkai("Myōgibō", "Tengu du Mont Ueno")
+	new Youkai("Myōgibō", "Tengu du Mont Ueno"),
+	new Youkai("Nabigē", "Tsukumogami d'une louche"),
+	new Youkai("Nagomi-takuri", "équivalent de Namahage dans la région de Heii, Préfecture d'Iwate"),
+	new Youkai("Naigubu", "Tengu du Mont Takao"),
+	new Youkai("Naki Babā", "la vieille pleureuse. Si elle vient pleurer à la porte d'une maison, le malheur va frapper ce foyer"),
+	new Youkai("Namahage", "Démons effrayants les enfants lors du rituel de purification des âmes du peuple ayant lieu le 31 décembre dans le département d'Akita"),
+	new Youkai("Namazu", "poisson-chat géant vivant dans la vase des profondeurs de la terre, et sur l'échine duquel repose le Japon"),
+	new Youkai("Name Onna", "femme qui lèche les hommes de partout"),
+	new Youkai("Nando-baba", "esprit d'une vieille-femme qui se cache sous le sol des greniers abandonnés"),
+	new Youkai("Narikama", "Tsukumogami d'une vieille bouilloire"),
+	new Youkai("Nebutori", "maladie qui sert à donner une leçon aux femmes qui dorment trop"),
+	new Youkai("Nekomata", "bête des montagnes crainte et dont on disait qu'elle attaquait, tuait et mangeait les humains qui erraient trop profondément dans les coins reculés"),
+	new Youkai("Nekomusume", "chat prenant la forme d'une fille"),
+	new Youkai("Nikonbō no Hi", "feu spectral d'Ōsaka"),
+	new Youkai("Nikusui", "apparaît sous l'apparence d'une jeune femme et suce toute la chair du corps de ses victimes"),
+	new Youkai("Ningyo", "créature marine"),
+	new Youkai("Ningyō no Rei", "esprit d'une poupée"),
+	new Youkai("Ninko", "esprit-renard invisible"),
+	new Youkai("Ninmenju", "arbre qui pousse dans les cavités des montagnes reculées, avec des fleurs qui ressemblent à des visages humains"),
+	new Youkai("Nobi", "feu spectral
+	new Youkai("Nobiagari", "plus on le regarde, plus il grandit"),
+	new Youkai("Nobusuma", "Mur surnaturel ou monstrueux écureuil volant selon les sources"),
+	new Youkai("Nodeppō", "il se tient perché sur un arbre et exhale une espèce de chauve-souris contre les promeneurs sur les sentiers"),
+	new Youkai("Noderabō", "étrange créature qui se tient près de la cloche d'un temple et qui la fait sonner le soir"),
+	new Youkai("Nogitsune", "kitsune maléfique"),
+	new Youkai("Noppera-bō", "fantôme sans visage"),
+	new Youkai("Notsugo", "spectre errant d'un nourrisson"),
+	new Youkai("No'uma", "yōkai à un seul œil de la région d'Iwami"),
+	new Youkai("Nozuchi", "serpent–yōkai, le rencontrer est un mauvais présage"),
+	new Youkai("Nue", "chimère qui apporte la malchance et la maladie"),
+	new Youkai("Nukekubi", "sa tête se détache de son corps et vole librement, attaquant et mordant les personnes"),
+	new Youkai("Nuppefuhofu", "yōkai qui n’est qu’un bloc de chair. Il apparaîtrait la nuit dans un temple en ruine"),
+	new Youkai("Nuppeppō", "autre nom du Nuppefuhofu"),
+	new Youkai("Nurarihyon", "vieil homme avec une tête en forme de gourde et portant un kesa. Il est parfois indiqué qu'il est le chef des yōkai"),
+	new Youkai("Nure-onna", "femme serpent qui apparaît sur les rives des rivières et les plages"),
+	new Youkai("Nuribō", "il apparaît sans crier gare sur une paroi abrupte"),
+	new Youkai("Nuribotoke", "il nettoie les objets décoratifs des autels domestiques"),
+	new Youkai("Nurikabe", "apparaît le plus souvent la nuit, sous la forme d'un grand mur pour bloquer les promeneurs"),
+	new Youkai("Nurunuru Bōzu", "dès qu'il trouve un humain, il se colle à lui et le frotte de son corps huileux"),
+	new Youkai("Nyoijizai", "Tsukumogami"),
+	new Youkai("Nyūbachibō", "Tsukumogami d'un mortier"),
+	new Youkai("Nyūdō-bōzu", "petit bonze de moins de 90 cm mais plus on le regarde, plus il pousse en hauteur"),
+	new Youkai("Nyūnaisuzume", "fantôme ayant l'apparence d'un moineau")
 ];
 
 /*
-I
-
-    Ibaraki-dōji - descendant d'un oni.
-    Ichiren-Bozu - perles de prière animées.
-    Ichimoku-nyūdō - il n’a qu’un œil énorme sur le dessus du crâne.
-    Ido-no-gami - ressemble à un humain avec une tête de poisson-chat et est parfois confondu avec le kappa.
-    Ijarokorogashi - tsukumogami ayant l'apparence d'une passoire qui roule.
-    Ijû - créature qui ressemble vaguement à un singe.
-    Ikiryō - essentiellement un fantôme vivant, car il est l'âme d'une personne vivante à l'extérieur de leur corps.
-    Ikuchi - serpent de mer qui se déplace au-dessus des bateaux en un arc tout dégoulinant d'huile.
-    Innenbi - yōkai de feu lié à la rancune.
-    Inugami - Chien-esprit créé, adoré et employé par une famille au moyen de la sorcellerie.
-    Inugami Gyoubu - un type de tanuki.
-    Ippon'ashi - ogre unijambiste apparaissant à Obaminé pour dévorer les voyageurs
-    Ippon-datara - grande créature de forme humaine, avec une seule jambe et un seul œil.
-    Ishinagenjo - yōkai féminin de la mer.
-    Iso Onna - femme attaquant les bateaux à l’amarre. Appelée aussi Isonagijo.
-    Isonade - poisson semblable à un monstre marin avec une queue couverte de barbillon.
-    Issie - monstre de lac.
-    Itaoni - yōkai en forme de planche issu d'un conte.
-    Itsumade - monstre cracheur de feu ressemblant à un oiseau.
-    Ittan-momen - rouleau de coton possédé qui tente d'étouffer les gens en s'enroulant autour de leurs visages.
-    Iwana-bōzu
-    Iyaya - femme dont le visage semble être celui d'un vieil homme.
-
-J
-
-    Jagoemon - serpent géant.
-    Jakotsu-babaa - vieille femme qui porte un serpent rouge dans sa main gauche et un serpent bleu dans la droite.
-    Jami - monstre naît de l'esprit de la montagne ou de la forêt. Il ressemble à une bête mais à un corps indistinct ou flou, voire presque invisible.
-    Janjanbi - feu-follet qui apparaît dans le département de Nara.
-    Jashin - dieu-serpent qui apparaît dans l’œuvre de Shigeru Mizuki.
-    Jatai - obi qui s'est transformé en serpent. Tsukumogami.
-    Jibakurei - esprit qui protège un endroit spécifique.
-    Jikininki - fantômes qui dévorent les cadavres des humains.
-    Jinmenju - arbre portant des fruits à visage humain.
-    Jinmenken - Chien à visage humain apparaissant dans les légendes urbaines récentes.
-    Jirōbō - tengu des Montagnes Hira.
-    Jishin-namazu - poisson-chat géant provoquant des tremblements de terres.
-    Jorōgumo - femme araignée.
-    Josenbi - feu spectral de la Préfecture de Shiga.
-    Jubokko - arbre vampire.
-
-K
-
-    Kabukiri kozô - enfant avec une coupe au bol et vêtu d'un kimono peu ordinaire. Ce serait un tanuki déguisé.
-    Kabuso - petit yōkai de la taille d'un chaton qui apparaît dans l'eau. Autre nom de Kawaso.
-    Kage-onna - ombre d'une femme projetée par la lumière de la Lune sur la porte coulissante en papier de la maison
-    Kahaku - autre nom du kappa
-    Kaifukibô - yōkai présent dans les douves d'un château dans les montagnes du département d'Okayama.
-    Kaijin - "l'homme de la mer". Quand il monte à bord, le mieux à faire est de ne pas parler et de rester sans bouger, car autrement il produit une tempête et fait chavirer le bateau.
-    Kaiyô - bateau fantôme.
-    Kakiotoko - Les kakis que personne ne ramasse et qui pourrissent sur l’arbre peuvent se transformer en un genre de bonze.
-    Kakuré Babâ - apparaît pour enlever les enfants qui jouent à cache-cache la nuit.
-    Kakurezato - Lieu magnifique où le temps s'écoule différemment que dans notre monde.
-    Kamaitachi - yōkai associé au vent.
-    Kameosa - Tsukumogami d'une vieille jarre.
-    Kamikiri - petit être de la taille d'un enfant et une tête de corbeau.
-    Kanbari nyūdō - esprit d'un moine qui espionne ceux qui vont aux toilettes.
-    Kanedama - "esprit de l’or". La maison qui le perd périt et celle qui l’accueille prospère.
-    Kanibôzu - crabe de la taille de deux tatamis et qui dévorait les bonzes du temple proche de l'étang où il se cachait.
-    Kanko - autre nom du Kuda-gitsune.
-    Kappa - le kappa est réputé pour chercher à attirer les humains ou les chevaux dans l'eau.
-    Karasu tengu - tengu.
-    Kasa-obake - Tsukumogami d'une ombrelle ou d'un parapluie.
-    Kasha - démon de félin qui descend du ciel et emporte les cadavres.
-    Kashanbo - autre race de kappa.
-    Kataashijôrô - yōkai volant une socque.
-    Katakirauwa - yōkai des îles Amami. Il se présente sous la forme d'un petit cochon sans ombre.
-    Katasharin - apparait la nuit avec un grincement de charrette.
-    Katawa-guruma - type de wanyūdō avec une femme angoissée à la place de la tête de moine dans une roue brûlante.
-    Katsura-otoko
-    Kawaakago - esprit de la rivière qui fait semblant d'être un bébé qui pleure.
-    Kawabotaru - feu follet qui apparaît la nuit dans le marais Inba du département de Chiba.
-    Kawahime - yōkai ayant l'apparence d'une femme de grande beauté.
-    Kawajorô - "prostituée de la rivière".
-    Kawako - Yōkai qui tire les enfants par les pieds au bord des ruisseaux.
-    Kawa Otoko - yōkai aquatique ayant une apparence humaine.
-    Kawatarō - C’est sous ce nom qu’était connu le plus commun des kappa.
-    Kawa-uso - Loutre surnaturelle ayant le don de métamorphose.
-    Kawa-zaru - On le surnomme « singe du fleuve » à cause de son aspect, mais il appartient à la famille des kappa.
-    Kayatsuridanuki - Tanuki qui tourmente les passants la nuit en tendant une moustiquaire en travers du chemin.
-    Kazenbō - fantôme d'un moine brûlé qui apparaît sur le mont Toribe près de Kyoto.
-    Kechibi - feu spectral
-    Kejōrō - yōkai avec de longs cheveux flottants qui a l'apparence d'une prostituée et que l'on peut croiser dans les quartiers chauds.
-    Keneō - vieillard assis dans le monde souterrain qui pèse les vêtements qui lui sont donnés par datsue-ba.
-    Kerakeraonna - 'esprit prenant l'apparence d'une femme gigantesque d'environ 40 ans vêtu d'un kimono.
-    Kesaran-pasaran - mystérieuse créature blanche duveteuse.
-    Keukegen - créature entièrement faite de cheveux.
-    Kijimuna - esprits malicieux habitant les grands banyans.
-    Kijo - ogresse qui mijote de l'humain dans sa marmite.
-    Kimjin - genre de kappa.
-    Kimotori - Yōkai apparaissant dans les cimetières après une cérémonie funéraire. Proche du Kasha.
-    Kirin - animal composite fabuleux issu de la mythologie chinoise possédant plusieurs apparences.
-    Kitsune - esprit renard.
-    Kitsunebi - feu de kitsune.
-    Kitsune-Tsuki - fait d'être possédé par un esprit renard
-    Kitsune no yomeiri (en) - Noce de renards.
-    Kiyohime - femme éconduite et jalouse se transformant en serpent pour poursuivre son ancien amant.
-    Kô Bozu - les "petits gosses" ressemblant à la Zashiki warashi.
-    Kodama - esprit vivant dans un arbre centenaire.
-    Koemonbi - autre nom donné au Chōchinbi.
-    Koiké Babâ - Nom d'une vieille chatte géante qui chassait l'humain en compagnie d'une meute de loup.
-    Kokakuchō - l'oiseau ubume.
-    Kokuribaba - terrible sorcière démon qui mange la peau des cadavres.
-    Koma-inu - gardiens des sanctuaires.
-    Konaki-Babâ - elle a le corps d’un bébé mais le visage d’une vieille. Elle est aussi très lourde quand on essaie de la porter.
-    Konaki-Jijii - prend l'apparence d'un bébé pour piéger les voyageurs.
-    Konoha tengu - tengu des feuilles.
-    Koropokkuru - nains habitant sous terre et dans les tiges des feuillages de tussilages ou de pétasites.
-    Kosagi - Yōkai de Shikoku qui subjugue ceux qui traînent des heures sous le kotatsu.
-    Kosamebô - on ne le voit que quand tombe une pluie fine.
-    Kosenjōbi – feu spectral flottant au-dessus d'anciens champs de combats.
-    Kosode-no-te - Tsukumogami d'un kimono à manches courtes ayant ses propres mains.
-    Kosokosoiwa - Rocher hanté qui murmure.
-    Kōtenbō - tengu de Katsuragi.
-    Kotengu - petit tengu.
-    Kôtôri bôzu - il dévorent les enfants qui se baladent en fin de soirée.
-    Kotorizo - yōkai du département de Shimané qui enlevait les enfants pour en extraire de l'huile.
-    Kowai - yōkai avare et goinfre.
-    Kubikajiri (en) - voyageur à qui on a refusé de donner à manger et finissant par mourir de faim. Il vient sur la tombe de celui qui lui a refusé un peu de nourriture pour exhumer sa tête et la dévorer.
-    Kubireoni - esprit qui possède les humains et les pousse au suicide.
-    Kubitsuridanuki - tanuki doué pour faire pendre les gens.
-    Kuchisake-onna - femme défigurée par un mari jaloux et changée en un esprit malin avide de reproduire par vengeance le même acte dont elle a été victime.
-    Kuda-gitsune (en) - petit animal ressemblant à un renard et utilisé en sorcellerie.
-    Kudan - veau qui naît avec le visage d'un homme. Il prédit une catastrophe dès sa naissance et meurt après avoir fait sa prédiction.
-    Kumo Yōkai - démon araignée.
-    Kuneyusuri - yōkai qui agite les haies.
-    Kurabebi - feu spectral. Apparaît par paire, flottant au-dessus de la mer.
-    Kurabokko - esprit-gardien du grenier.
-    Kurage-no-hinotama - méduse qui flotte dans les airs comme une boule de feu.
-    Kurayamimé - yōkai avec un œil sur chaque genou qui lui permet de marcher sans problème dans l'obscurité.
-    Kurobotoké - apparaît sous la forme d'un gentil petit enfant, et il se met à voler en tout sens quand il n'est pas content.
-    Kurobôzu - il aspire le souffle des humains endormis et lèche leurs bouches.
-    Kurodama - se présente comme une masse noire. Il s'introduit dans les maisons les nuits d'été et oppresse les humains dans leurs sommeils.
-    Kurokamikiri - il ne coupe que les cheveux noirs.
-    Kuroté - hante les toilettes des maisons. Sa main sort du trou pour caresser les fesses des femmes.
-    Kurozuka - célèbre sorcière cannibale de Adachigaharaa.
-    Kutabe (en)
-    Kuzunoha - kitsune qui serait la mère d'Abe no Seimei.
-    Kyōkotsu – personnage squelettique qui émerge d'un puits.
-    Kyonshī - version japonaise du vampire sautant chinois appelé jiangshi.
-    Kyōrinrin - rouleaux de papiers hantés.
-    Kyūbi-no-kitsune - kitsune à neuf queues.
-    Kyūketsuki - vampire japonais.
-    Kyûso - vieille souris qui dévore les chats.
-
-M
-
-    Maikubi - "têtes dansantes".
-    Makura-gaeshi - esprit qui vous prend l'oreiller de dessous la tête pendant votre sommeil et le met sous vos pieds à la place.
-    Mamedanuki - tanuki aimant gonfler ses testicules et les étaler pour berner les humains.
-    Mannen-dake - monstre-bambou qui se nourrit des âmes des voyageurs perdus qui campent dans les bambouseraies.
-    Mayoiga - maison que les voyageurs égarés trouvent parfois en montagnes.
-    Mekurabe - autre nom du Dokuro no Kai.
-    Menreiki - esprits qui habitent dans des masques.
-    Meshikui yūrei - yūrei qui hante les maisons et mange la nourriture comme un humain.
-    Miage-nyūdō - yōkai avec une tête de bonze antipathique qui apparaît dans les chemins.
-    Mikaribaba - Elle se rend chez les gens et frappe à la porte de chaque maison et demande : "Prêtez-moi une pèlerine de paille !".
-    Mikoshi-nyūdō - autre nom de Miage-nyūdō.
-    Minkirauwa - yōkai des îles Amami, il se présente sous la forme d'un petit cochon qui se faufile entre les jambes des passants.
-    Minogame - tortue légendaire qui aurait vécu 10 000 ans.
-    Mintsuchikamui - genre de kappa.
-    Misaki - terme générique pour l'existence des différents esprits au Japon.
-    Mishigê - tsukumogami d'une spatule à riz.
-    Mizoidashi - mort hantant un fossé.
-    Mizuchi - dangereux dragon marin ou une créature légendaire ressemblant à un serpent.
-    Môki - ravage les cimetières pour se repaître des têtes des cadavres quand il n'a pas trouvé assez d'offrandes.
-    Mokumokuren - esprit habitant les shōji (les murs et les portes coulissantes en papier).
-    Momijigari - femme-démon du mont Togakushi.
-    Momonjii - si on le rencontre, on est sûr de tomber malade
-    Mononoke - "Esprits-vengeurs". Autre nom donné aux yōkai.
-    Morinji-no-kama - autre nom pour Bunbuku Chagama, le tanuki-théière.
-    Mōryō - yōkai qui dévore les cadavres.
-    Muitichigoro - il tue les gens en leur passant sous les jambes.
-    Mujina - petit animal à poil, réputé maître dans l’art de la transformation et dans l’ensorcellement des humains.
-    Mu-onna
-    Musabi - feu spectral du département de Miyazaki. Il apparaît par paire les soirs de pluie.
-    Myōbu - titre parfois donné au kitsune.
-    Myōgibō - tengu du Mont Ueno.
-
-N
-
     Nabigê - tsukumogami d'une louche.
     Nagomi-takuri - équivalent de Namahage dans la région de Heii, Préfecture d'Iwate.
     Naigubu - tengu du Mont Takao.
