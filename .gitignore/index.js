@@ -802,11 +802,9 @@ client.on("message", message => {
 				problem = "a";
 				var randomlewdneko = superagent.get('https://nekos.life/api/v2/img/lewd');
 				problem += "b";
-				const lewdneko = new Discord.RichEmbed();
-				problem += "c";
-				lewdneko.setImage(randomlewdneko.body.url):
-				problem += "d";
-				lewdneko.setColor('RANDOM');
+				const lewdneko = new Discord.RichEmbed()
+					.setImage(randomlewdneko.body.url)
+					.setColor('RANDOM')
 				problem += "e";
 				message.channel.send(lewdneko);
 				problem += "f";
