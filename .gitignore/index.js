@@ -802,7 +802,7 @@ client.on("message", message => {
 					.end((err, response) => {
 						const lewdembed = new Discord.RichEmbed()
 							.setTitle("Lewd Neko")
-							.setImage(response.body.url)
+							//.setImage(response.body.url)
 							.setColor('#FF0000')
 						message.channel.send(lewdembed);
 					})
