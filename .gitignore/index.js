@@ -511,7 +511,7 @@ var youkaidex = [
 	new Youkai("Shiryō", "esprit d'une personne décédée"),
 	new Youkai("Shisa", "considérés comme des protections repoussant les forces maléfiques. Version d'Okinawa des shishi"),
 	new Youkai("Shishi", "paire de chiens-lions qui gardent l'entrée des temples"),
-	new Youkai("Shisuzu
+	new Youkai("Shisuzu", ""),
 	new Youkai("Shōjō", "sorte d’esprit de mer japonais avec un visage et des cheveux rouge et un penchant pour l’alcool"),
 	new Youkai("Shōkera", "créature qui jette un œil par la lucarne des vieilles maisons"),
 	new Youkai("Shōki", "exorciste légendaire originaire de Chine"),
