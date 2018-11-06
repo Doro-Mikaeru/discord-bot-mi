@@ -4,8 +4,8 @@ const client = new Discord.Client();
 const superagent = require("snekfetch"); // utile pour lewdneko
 
 // Récupérer les données des utilisateurs qui se trouvent dans le fichier UserData.json
-var fs = require('fs');
-var userData = JSON.parse(fs.readFileSync('userData.json', 'utf8'));
+//var fs = require('fs');
+//var userData = JSON.parse(fs.readFileSync('userData.json', 'utf8'));
 
 client.on('ready', () => {
   console.log('Prêt !');
