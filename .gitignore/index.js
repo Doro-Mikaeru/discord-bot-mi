@@ -1,10 +1,11 @@
 const Discord = require('discord.js');
 const { Client, Attachment } = require('discord.js');
 const client = new Discord.Client();
+const superagent = require("snekfetch"); // utile pour lewdneko
 
 // Récupérer les données des utilisateurs qui se trouvent dans le fichier UserData.json
 var fs = require('fs');
-var userData = JSON.parse(fs.readFileSync('userData.json', 'utf8'));
+//var userData = JSON.parse(fs.readFileSync('userData.json', 'utf8'));
 
 client.on('ready', () => {
   console.log('Prêt !');
@@ -792,6 +793,24 @@ client.on("message", message => {
 			);
 		}
 	};
+	
+	// =lewdneko
+	if(message.content.startsWith(prefix + "lewdneko")) {
+		try {
+			if (message.channel.nsfw) {
+				var randomelewdneko = superagent.get('https://nekos.life/api/v2/img/lewd')
+				const lewdneko = new Discord.RichEmbed()
+					.setImage(response.body.url)
+					.setColor('RANDOM')
+				message.channel.send(lewdneko);
+			}
+			else {
+				message.channel.send('Vous ne pouvez pas utiliser cette commande ici.');
+			}
+		}
+		catch {
+		}
+	}
 	
 	// =pokemon-artwork
 	if(message.content.startsWith(prefix + "pokemon-artwork")) {
