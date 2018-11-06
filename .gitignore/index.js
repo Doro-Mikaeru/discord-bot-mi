@@ -36,198 +36,178 @@ function Youkai(name, shortDescription) {
 //YoukaiDex
 var youkaidex = [
 	new Youkai("Abumi-kuchi", "Tsukumogami d'un étrier"),
-	new Youkai("Abura-akago", "Enfant fantôme qui lèche l'huile des lampes à huile")
+	new Youkai("Abura-akago", "enfant fantôme qui lèche l'huile des lampes à huile"),
+	new Youkai("Abura-bō", "prend souvent la forme d'un bonze"),
+	new Youkai("Abura-sumashi", "esprit"),
+	new Youkai("Abura-tori", "kidnappe les enfants"),
+	new Youkai("Ajari", "Tengu de la Province de Higo"),
+	new Youkai("Akaatama", "esprit enfant faisant étalage de ses pouvoirs"),
+	new Youkai("Akabeko", "vache rouge"),
+	new Youkai("Akabōzu", "moine rouge"),
+	new Youkai("Akamataa", "esprit serpent"),
+	new Youkai("Akaname", "lèche la saleté des baignoires la nuit"),
+	new Youkai("Akarinashisoba", "apparaît en général pendant la nuit la plus froide de l'hiver"),
+	new Youkai("Akashita", "créature en forme de nuage noir aux griffes et aux dents acérées"),
+	new Youkai("Akateko", "apparaît sous la forme d'une main rouge pendant d'un arbre"),
+	new Youkai("Akki", "ogres ou démons responsables des diverses calamités"),
+	new Youkai("Akkorokamui", "gigantesque poisson ou calamar du folklore de l'ethnie des Aïnous"),
+	new Youkai("Akuma", "esprit maléfique"),
+	new Youkai("Akurojin-no-hi", "flamme spectrale"),
+	new Youkai("Amabie", "créature marine sortant de la mer pour faire une prédiction"),
+	new Youkai("Amaburakosagi", "autre nom de Namahage"),
+	new Youkai("Amamehagi", "autre nom de Namahage"),
+	new Youkai("Amanojaku", "petit oni ayant le pouvoir de provoquer chez une personne ses désirs les plus sombres"),
+	new Youkai("Amanozako", "déesse monstrueuse"),
+	new Youkai("Amazake-babaa", "vieille femme qui frappe aux portes des maisons la nuit et qui demande avec une voix d'enfant de l'amazake"),
+	new Youkai("Amefurikozō", "enfant étrange qui joue sous la pluie"),
+	new Youkai("Amemasu", "créature des Aïnous ressemblant à un poisson ou une baleine"),
+	new Youkai("Ameonna", "femme apparaissant sous la pluie"),
+	new Youkai("Amikiri", "créature coupant les filets des pêcheurs"),
+	new Youkai("Amorōnagu", "tennin (être céleste) de l'île d'Amami O-shima"),
+	new Youkai("Anmo", "démon d'un rituel disciplinaire de la Préfecture d'Iwate"),
+	new Youkai("Aoandon", "yōkai féminin qui apparaît lorsque la dernière bougie du Hyakumonogatari Kaidankai est éteinte"),
+	new Youkai("Aobōzu", "moine bleu"),
+	new Youkai("Aonyobo", "femme fantôme"),
+	new Youkai("Aosagibi", "autre nom d'Aosaginohi"),
+	new Youkai("Aosaginohi", "esprit héron"),
+	new Youkai("Arikura-no-baba", "vieille femme avec des pouvoirs magiques"),
+	new Youkai("Ashiaraiyashiki", "démon"),
+	new Youkai("Ashimagari", "apparition ayant l'habitude de serrer très fort les jambes des passants, les empêchant de se déplacer"),
+	new Youkai("Ashinaga-tenaga", "deux créatures inséparables à l'apparence humaine. Ashi-Naga a pourtant des jambes démesurées et de tout petits bras, tandis que son comparse Te-Naga a de longs bras et des jambes minuscules"),
+	new Youkai("Asobibi", "feu spectral"),
+	new Youkai("Ato-oi-kozō", "invisible, il suit les humains"),
+	new Youkai("Ayakashi", "yōkai ressemblant à une anguille. Le mot est parfois utilisé comme terme générique pour les yōkai"),
+	new Youkai("Ayakashi-no-ayashibi", "feu spectral"),
+	new Youkai("Azukibabaa", "elle lave des sojas rouges au bord d'un ruisseau et attrape les passants pour les manger"),
+	new Youkai("Azukihakari", "yōkai s'invitant dans les maisons"),
+	new Youkai("Azukiarai", "autre nom d'Azukitogi"),
+	new Youkai("Azukitogi", "il lave des sojas rouges au bord d'un ruisseau, mais il est inoffensif"),
+	new Youkai("Bakebi", "feu spectral"),
+	new Youkai("Bakedanuki", "tanuki farceur"),
+	new Youkai("Bakedōrō", "fait perdre leur chemin aux voyageurs"),
+	new Youkai("Bakefurugeta", "Tsukumogami de vieux socques en bois"),
+	new Youkai("Bakeichō no sei", "esprit malveillant d'un ginkgo"),
+	new Youkai("Bake-kujira", "baleine fantôme"),
+	new Youkai("Bakemono", "autre nom des obake"),
+	new Youkai("Bakeneko", "chat fantôme"),
+	new Youkai("Bakezōri", "Tsukumogami d'une sandale de paille"),
+	new Youkai("Bakki", "ogre de la sécheresse"),
+	new Youkai("Baku", "créature qui se nourrit des rêves et des cauchemars"),
+	new Youkai("Basabasa", "autre nom du Basan"),
+	new Youkai("Basan", "coq crachant du feu"),
+	new Youkai("Basho ni Sumu Rei", "esprit d'un lieu particulier"),
+	new Youkai("Bashōnosei", "esprit du bananier"),
+	new Youkai("Betobeto-san", "esprit qui suit les gens la nuit"),
+	new Youkai("Binbōgami", ""),
+	new Youkai("Bishagatsuku", "créature volant les âmes"),
+	new Youkai("Biwa-bokuboku", "Tsukumogami d'un biwa"),
+	new Youkai("Bōzudanuki", "moine tanuki"),
+	new Youkai("Bunagayabi", "demeure au fond des rivières"),
+	new Youkai("Bunbuku Chagama", ""),
+	new Youkai("Buruburu", "esprit qui provoque des frissons"),
+	new Youkai("Buzenbō", "Tengu du Mont Hiko"),
+	new Youkai("Byakko", "version japonaise du Tigre blanc de l'ouest chinois"),
+	new Youkai("Byōbunozoki", ""),
+	new Youkai("Chōchin-kozō", "enfant apparaissant les nuits où il bruine"),
+	new Youkai("Chōchin-obake", "lanterne fantôme de papier"),
+	new Youkai("Chōchinbi", "flammes démoniaques qui apparaissent dans les sentiers entre rizières"),
+	new Youkai("Daidarabotchi", ""),
+	new Youkai("Daitengu", "grand Tengu"),
+	new Youkai("Daki", "yōkai féminin vivant près d'une falaise"),
+	new Youkai("Danzaburou-danuki", ""),
+	new Youkai("Daranibō", "Tengu du Mont Fuji"),
+	new Youkai("Datsue-ba", "démon à l'allure de vieille femme"),
+	new Youkai("Dodomeki (en)", "Fantôme d'une femme pickpocket"),
+	new Youkai("Dokuro no Kai", "ensemble de crânes qui finissent par se regrouper pour former un crâne immense"),
+	new Youkai("Dōnotsura", ""),
+	new Youkai("Dorotabō", "fantôme d'un vieil homme hantant les champs de riz"),
+	new Youkai("Enenra", "monstre fait de fumée"),
+	new Youkai("Enkō", "Kappa de Shikoku et de l'ouest Honshū"),
+	new Youkai("Enshōjo", "autre nom de Hinoenma"),
+	new Youkai("Eritate-goromo", ""),
+	new Youkai("Fūbo", "autre nom du Furi"),
+	new Youkai("Fuchi-saru", "singe des abysses, genre de kappa"),
+	new Youkai("Fudagaeshi", "fantômes qui demandent de détacher les amulettes des portes extérieures"),
+	new Youkai("Fuguramayōbi", "sorcière du Fugurama"),
+	new Youkai("Fukikeshi babā", "vieille femme qui souffle sur les flammes des lampes pour les éteindre"),
+	new Youkai("Fukurokatsugi", "il porte un grand sac pour enlever les enfants"),
+	new Youkai("Fukuro-sage", "Tanuki de la préfecture de Nagano et de Shikoku"),
+	new Youkai("Funayūrei", "esprits vengeurs"),
+	new Youkai("Furaribi", "oiseau de feu"),
+	new Youkai("Fūri", "ressemble à une loutre avec peu de poils sur le corps et est capable de voler"),
+	new Youkai("Furusoma", "ce serait l'âme de quelqu'un mort écrasé par un arbre abattu"),
+	new Youkai("Furutsubaki-no-rei", "vieux camélia réputé pour ses métamorphoses"),
+	new Youkai("Furu-utsubo", "Tsukumogami du carquois d'un archer tué"),
+	new Youkai("Fūseijou", "autre nom du Furi"),
+	new Youkai("Futakuchi-onna", "femme avec deux bouches"),
+	new Youkai("Futtachi", "animal devenant un yōkai en prenant de l'âge"),
+	new Youkai("Gagoze", "démon qui attaque les jeunes prêtres du temple Gangō-ji"),
+	new Youkai("Gaki", "démon de la faim"),
+	new Youkai("Gangi-kozō", "vit près des côtes et dévore des poissons en commençant par la tête"),
+	new Youkai("Gan no Sei", "esprit du cercueil"),
+	new Youkai("Gaoro", "autre nom du kappa en pays Kishū (actuels départements de Wakayama et Mie)"),
+	new Youkai("Garappa", "kappa de Kyūshū"),
+	new Youkai("Garei", "esprit habitant les dessins, les peintures et les sculptures"),
+	new Youkai("Gashadokuro", "yōkai ayant l'apparence d'un squelette géant"),
+	new Youkai("Genbu", "la tortue noire du nord"),
+	new Youkai("Giba", "yōkai s'attaquant aux chevaux"),
+	new Youkai("Gongorōbi", "feu spectral dans la Préfecture de Niigata"),
+	new Youkai("Goryō", "esprits vengeurs de la mort"),
+	new Youkai("Gotokuneko", "chat allumant un feu"),
+	new Youkai("Guhin", "autre nom de Tengu"),
+	new Youkai("Gyūki", "autre nom d'Ushi-oni"),
+	new Youkai("Hagedanuki", "tanuki chauve dans la Préfecture de Kagawa"),
+	new Youkai("Hainu", "chien ailé"),
+	new Youkai("Hakanohi", "feu spectral apparaissant au-dessus des tombes"),
+	new Youkai("Hakuba", "cheval blanc qui porte chance"),
+	new Youkai("Hakuja no Myojin", "divinité serpent blanc"),
+	new Youkai("Hakutaku", "autre nom du Kutabe"),
+	new Youkai("Hakuzōsu", "kitsune"),
+	new Youkai("Hanako-san", "esprit d'une jeune fille qui hanterait les toilettes des écoles"),
+	new Youkai("Hannya", "fantôme d'une femme revenue sur terre pour assouvir sa vengeance"),
+	new Youkai("Happa Yōkai", "sort d’un pilier mal monté"),
+	new Youkai("Haradashi", "yōkai aimant s'amuser"),
+	new Youkai("Harionago", "elle accroche les hommes avec ses crochets au bout de ses cheveux ébouriffés"),
+	new Youkai("Hashihime", "yōkai féminin qui apparaît près des ponts"),
+	new Youkai("Hashira Yōkai", "esprit d'un pilier qui se plaint d’avoir été installé de travers"),
+	new Youkai("Hasshaku", "fantôme d'une légende urbaine"),
+	new Youkai("Hatahiro", "rancœur d'une femme qui se transforme en serpent"),
+	new Youkai("Hataonryō", "spectres des corps abandonnés de ceux morts de faim"),
+	new Youkai("Hayatarō", "chien qui tua le sarugami à Kamiina, Préfecture de Nagano"),
+	new Youkai("Heikegani", "crabes étant la réincarnation de l'esprit des guerriers"),
+	new Youkai("Heikō", "autre nom du Fūri"),
+	new Youkai("Hibagon", "bigfoot japonais"),
+	new Youkai("Hidarugami", "âme abandonnée qui affame les voyageurs en les étreignant au point de les empêcher de marcher"),
+	new Youkai("Hiderigami", "yōkai provoquant la sécheresse"),
+	new Youkai("Hihi", "Monstrueux babouin qui vit au plus profond des montagnes"),
+	new Youkai("Hikeshibaba", "vieille femme qui éteint les lanternes"),
+	new Youkai("Himamushi Nyūdō", "bonze qui lèche l'huile des lampes"),
+	new Youkai("Hinode", "l'aube"),
+	new Youkai("Hinoenma", "yōkai punissant les bonzes ayant eu un rapport sexuel avec des femmes"),
+	new Youkai("Hi no Kuruma", "véhicule de feu qui vient chercher les âmes pour les emmener aux enfers"),
+	new Youkai("Hitodama", "manifestation de l'esprit d'une personne décédée"),
+	new Youkai("Hitotsu-Datara", "Il n'a qu'un œil et une jambe et défi les voyageurs au sumo"),
+	new Youkai("Hitotsume-kozō", "petit garçon qui ne possède qu'un unique œil et une longue langue qui pend hors de sa bouche"),
+	new Youkai("Hitotsume-nyūdō", ""),
+	new Youkai("Hiyoribō", "esprit qui arrête la pluie"),
+	new Youkai("Hizama", "coq annonciateur d'incendie"),
+	new Youkai("Hoji", "esprit mauvais de Tamamo-no-Mae"),
+	new Youkai("Hōkibō", "Tengu de la Montagne Daisen"),
+	new Youkai("Hone-onna", "femme squelette"),
+	new Youkai("Hōkō", "esprit canin"),
+	new Youkai("Hōnade", "main pâle qui sort de l'obscurité et caresse les joues"),
+	new Youkai("Honekarakasa", "parapluie en os"),
+	new Youkai("Hone-onna", "succube"),
+	new Youkai("Hō-ō", "phénix"),
+	new Youkai("Hosode", "a l'apparence d'un bras très fin. Mauvais présage"),
+	new Youkai("Hotoke", "personne décédée"),
+	new Youkai("Hyakki Yakō", "procession de yōkai"),
+	new Youkai("Hyakume", "yōkai aux cent yeux"),
+	new Youkai("Hyōsube", "créature ressemblant à un singe et apparentée au kappa"),
+	new Youkai("Hyōtan-kozō", "Tsukumogami d'une calebasse")
 ];
 
 /*
-    Abumi-kuchi - tsukumogami d'un étrier.
-    Abura-akago - enfant fantôme qui lèche l'huile des lampes à huile.
-    Abura-bō - prend souvent la forme d'un bonze.
-    Abura-sumashi - esprit.
-    Abura-tori - kidnappe les enfants.
-    Ajari - Tengu de la Province d' Higo.
-    Akaatama - esprit enfant faisant étalage de ses pouvoirs.
-    Akabeko - vache rouge.
-    Akabôzu - moine rouge.
-    Akamataa - esprit serpent.
-    Akaname - lèche la saleté des baignoires la nuit.
-    Akarinashisoba - apparaît en général pendant la nuit la plus froide de l'hiver.
-    Akashita - créature en forme de nuage noir aux griffes et aux dents acérées.
-    Akateko - apparaît sous la forme d'une main rouge pendant d'un arbre.
-    Akki - ogres ou démons responsables des diverses calamités.
-    Akkorokamui - gigantesque poisson ou calamar du folklore de l'ethnie des Aïnous.
-    Akuma - esprit maléfique.
-    Akurojin-no-hi - flamme spectrale.
-    Amabie (en) - créature marine sortant de la mer pour faire une prédiction.
-    Amaburakosagi - autre nom de Namahage
-    Amamehagi - autre nom de Namahage
-    Amanojaku - petit oni ayant le pouvoir de provoquer chez une personne ses désirs les plus sombres.
-    Amanozako - déesse monstrueuse.
-    Amazake-babaa - vieille femme qui frappe aux portes des maisons la nuit et qui demande avec une voix d'enfant de l'amazake.
-    Amefurikozō - enfant étrange qui joue sous la pluie.
-    Amemasu - créature des Aïnous ressemblant à un poisson ou une baleine.
-    Ameonna - femme apparaissant sous la pluie.
-    Amikiri - créature coupant les filets des pêcheurs.
-    Amorōnagu - tennin (être céleste) de l'île d'Amami Ō-shima.
-    Anmo - démon d'un rituel disciplinaire de la Préfecture d'Iwate.
-    Aoandon - yōkai féminin qui apparaît lorsque la dernière bougie du Hyakumonogatari Kaidankai est éteinte.
-    Aobōzu - moine bleu.
-    Aonyōbō - femme fantôme.
-    Aosagibi - autre nom de Aosaginohi.
-    Aosaginohi - esprit héron
-    Arikura-no-baba - vieille femme avec des pouvoirs magiques.
-    Ashiaraiyashiki - démon.
-    Ashimagari - apparition ayant l'habitude de serrer très fort les jambes des passants, les empêchant de se déplacer.
-    Ashinaga-tenaga - deux créatures inséparables à l'apparence humaine. Ashi-Naga a pourtant des jambes démesurées et de tout petits bras, tandis que son comparse Te-Naga a de longs bras et des jambes minuscules.
-    Asobibi - feu spectral.
-    Ato-oi-kozō - invisible, il suit les humains.
-    Ayakashi - yōkai ressemblant à une anguille. Le mot est parfois utilisé comme terme générique pour les yōkai.
-    Ayakashi-no-ayashibi - feu spectral.
-    Azukibabaa - elle lave des sojas rouges au bord d'un ruisseau et attrape les passants pour les manger.
-    Azukihakari- yōkai s'invitant dans les maisons.
-    Azukiarai - autre nom de Azukitogi.
-    Azukitogi - il lave des sojas rouges au bord d'un ruisseau mais il est inoffensif.
-
-B
-
-    Bakebi - feu spectral
-    Bakedanuki - Tanuki farceur.
-    Bakedôrô - fait perdre leur chemin aux voyageurs.
-    Bakefurugeta - Tsukumogami de vieux socques en bois.
-    Bakeichô no sei - esprit malveillant d'un ginkgo.
-    Bake-kujira - baleine fantôme.
-    Bakemono - autre nom des obake.
-    Bakeneko - chat fantôme.
-    Bakezōri - Tsukumogami d'une sandale de paille.
-    Bakki - ogre de la sécheresse.
-    Baku - créature qui se nourrit des rêves et des cauchemars.
-    Basabasa - autre nom du Basan.
-    Basan - coq crachant du feu.
-    Basho ni Sumu Rei - esprit d'un lieu particulier.
-    Bashōnosei - esprit du bananier.
-    Betobeto-san - esprit qui suit les gens la nuit.
-    Binbōgami
-    Bishagatsuku - créature volant les âmes.
-    Biwa-bokuboku - Tsukumogami d'un biwa.
-    Bôzudanuki - moine tanuki.
-    Bunagayabi - demeure au fond des rivières.
-    Bunbuku Chagama
-    Buruburu - esprit qui provoque des frissons.
-    Buzenbō - Tengu du Mont Hiko.
-    Byakko - version japonaise du Tigre blanc de l'ouest chinois
-    Byōbunozoki
-
-C-D-E
-
-    Chōchin-kozô - enfant apparaissant les nuits où il bruine.
-    Chōchin-obake - lanterne fantôme de papier.
-    Chōchinbi - flammes démoniaques qui apparaissent dans les sentiers entre rizières.
-
-    Daidarabotchi (en)
-    Daitengu - grand tengu.
-    Daki - yōkai féminin vivant près d'une falaise.
-    Danzaburou-danuki (en)
-    Daranibō - Tengu du Mont Fuji.
-    Datsue-ba - démon à l'allure de vieille femme.
-    Dodomeki (en) - Fantôme d'une femme pickpocket.
-    Dokuro no Kai - ensemble de crânes qui finissent par se regrouper pour former un crâne immense.
-    Dōnotsura
-    Dorotabō - fantôme d'un vieil homme hantant les champs de riz.
-
-    Enenra (en) - Monstre fait de fumée.
-    Enkō - Kappa de Shikoku et de l'ouest Honshū.
-    Enshôjo - autre nom de Hinoenma.
-    Eritate-goromo
-
-F
-
-    Fūbo - autre nom du Fūri.
-    Fuchi-saru - singe des abysses, genre de kappa.
-    Fudagaeshi - fantômes qui demandent de détacher les amulettes des portes extérieures.
-    Fuguramayôbi - sorcière du Fugurama.
-    Fukikeshi babâ - vieille femme qui souffle sur les flammes des lampes pour les éteindre.
-    Fukurokatsugi - il porte un grand sac pour enlever les enfants.
-    Fukuro-sage - Tanuki de la préfecture de Nagano et de Shikoku.
-    Funayūrei - esprits vengeurs.
-    Furaribi (en) - oiseau de feu.
-    Fūri (en) - ressemble à une loutre avec peu de poils sur le corps et est capable de voler.
-    Furusoma - Ce serait l'âme de quelqu'un mort écrasé par un arbre abattu.
-    Furutsubaki-no-rei - vieux camélia réputé pour ses métamorphoses.
-    Furu-utsubo - Tsukumogami du carquois d'un archer tué.
-    Fūseijou - autre nom du Fūri.
-    Futakuchi-onna - femme avec deux bouches.
-    Futtachi - animal devenant un yōkai en prenant de l'âge.
-
-G
-
-    Gagoze - démon qui attaque les jeunes prêtres du temple Gangō-ji.
-    Gaki - démon de la faim.
-    Gangi-kozō - vit près des côtes et dévore des poissons en commençant par la tête.
-    Gan no Sei - esprit du cercueil.
-    Gaoro - autre nom du kappa en pays Kishû (actuels départements de Wakayama et Mie)
-    Garappa - kappa de Kyūshū.
-    Garei - esprit habitant les dessins, les peintures et les sculptures.
-    Gashadokuro - yōkai ayant l'apparence d'un squelette géant.
-    Genbu - la tortue noire du nord.
-    Giba - yōkai s'attaquant aux chevaux.
-    Gongorōbi - feu spectral dans la Préfecture de Niigata.
-    Goryō - Esprits vengeurs de la mort.
-    Gotokuneko - chat allumant un feu.
-    Guhin - autre nom de tengu
-    Gyūki - autre nom d'Ushi-oni
-
-H
-
-    Hagedanuki - tanuki chauve dans la Préfecture de Kagawa.
-    Hainu - chien ailé.
-    Hakanohi - feu spectral apparaissant au-dessus des tombes.
-    Hakuba - cheval blanc qui porte chance.
-    Hakuja no Myojin - divinité serpent blanc.
-    Hakutaku (en) - autre nom du Kutabe.
-    Hakuzōsu (en) - kitsune
-    Hanako-san - esprit d'une jeune fille qui hanterait les toilettes des écoles.
-    Hannya - fantôme d'une femme revenue sur terre pour assouvir sa vengeance.
-    Happa Yōkai - sort d’un pilier mal monté.
-    Haradashi - yōkai aiman s'amuser.
-    Harionago - elle accroche les hommes avec ses crochets au bout de ses cheveux ébouriffés.
-    Hashihime - yōkai féminin qui apparaît près des ponts.
-    Hashira Yōkai - esprit d'un pilier qui se plaint d’avoir été installé de travers.
-    Hasshaku - fantôme d'une légende urbaine.
-    Hatahiro - rancœur d'une femme qui se transforme en serpent.
-    Hataonryô - spectres des corps abandonnés de ceux morts de faim.
-    Hayatarō - chien qui tua le sarugami à Kamiina, Préfecture de Nagano.
-    Heikegani - crabes étant la réincarnation de l'esprit des guerriers.
-    Heikō - autre nom du Fūri.
-    Hibagon - bigfoot japonais.
-    Hidarugami - âme abandonnée qui affame les voyageurs en les étreignant au point de les empêcher de marcher.
-    Hiderigami - yōkai provoquant la sécheresse.
-    Hihi - Monstrueux babouin qui vit au plus profond des montagnes.
-    Hikeshibaba - vieille femme qui éteint les lanternes.
-    Himamushi Nyûdô - bonze qui lèche l'huile des lampes.
-    Hinode - l'aube.
-    Hinoenma - yōkai punissant les bonzes ayant eu un rapport sexuel avec des femmes.
-    Hi no Kuruma - véhicule de feu qui vient chercher les âmes pour les emmener aux enfers.
-    Hitodama - manifestation de l'esprit d'une personne décédée.
-    Hitotsu-Datara - Il n'a qu'un œil et une jambe et défi les voyageurs au sumo.
-    Hitotsume-kozō - petit garçon qui ne possède qu'un unique œil et une longue langue qui pend hors de sa bouche.
-    Hitotsume-nyūdō
-    Hiyoribō - esprit qui arrête la pluie.
-    Hizama - coq annonciateur d'incendie.
-    Hoji - esprit mauvais de Tamamo-no-Mae.
-    Hōkibō - tengu de la Montagne Daisen.
-    Hone-onna - femme squelette.
-    Hōkō - esprit canin.
-    Hônadé - main pâle qui sort de l'obscurité et caresse les joues.
-    Honekarakasa - parapluie en os.
-    Hone-onna - succube.
-    Hō-ō - phénix.
-    Hosodé - à l'apparence d'un bras très fin. Mauvais présage.
-    Hotoke - personne décédée.
-    Hyakki Yakō - procession de yōkai.
-    Hyakume - yōkai aux cent yeux.
-    Hyōsube - créature ressemblant à un singe et apparentée au kappa.
-    Hyōtan-kozō - Tsukumogami d'une calebasse.
-
 I
 
     Ibaraki-dōji - descendant d'un oni.
