@@ -803,7 +803,7 @@ client.on("message", message => {
 				niveau += "B";
 				const lewdneko = new Discord.RichEmbed()
 					.setImage(randomlewdneko.body.url)
-					.setColor('RANDOM')
+					.setColor('#FF0000')
 				niveau += "C";
 				message.channel.send(lewdneko);
 			}
