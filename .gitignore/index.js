@@ -293,7 +293,7 @@ var youkaidex = [
 	new Youkai("Kirin", "animal composite fabuleux issu de la mythologie chinoise possédant plusieurs apparences"),
 	new Youkai("Kitsune", "esprit renard"),
 	new Youkai("Kitsunebi", "feu de kitsune"),
-	new Youkai("Kitsune-Tsuki", "fait d'être possédé par un esprit renard
+	new Youkai("Kitsune-Tsuki", "fait d'être possédé par un esprit renard"),
 	new Youkai("Kitsune no yomeiri", "Noce de renards"),
 	new Youkai("Kiyohime", "femme éconduite et jalouse se transformant en serpent pour poursuivre son ancien amant"),
 	new Youkai("Kō Bozu", "les petits gosses ressemblant à la Zashiki warashi"),
