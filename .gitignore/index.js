@@ -796,25 +796,20 @@ client.on("message", message => {
 	
 	// =lewdneko
 	if(message.content.startsWith(prefix + "lewdneko")) {
-		var problem = "";
 		try {
 			if (message.channel.nsfw) {
-				problem = "a";
 				var randomlewdneko = superagent.get('https://nekos.life/api/v2/img/lewd');
-				problem += "b";
 				const lewdneko = new Discord.RichEmbed()
 					.setImage(randomlewdneko.body.url)
 					.setColor('RANDOM')
-				problem += "e";
 				message.channel.send(lewdneko);
-				problem += "f";
 			}
 			else {
 				message.channel.send('Vous ne pouvez pas utiliser cette commande ici.');
 			}
 		}
 		catch {
-			message.channel.send(problem);
+			message.channel.send("Erreur");
 		}
 	}
 	
