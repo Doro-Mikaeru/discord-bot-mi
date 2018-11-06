@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 // Récupérer les données des utilisateurs qui se trouvent dans le fichier UserData.json
 var fs = require('fs');
-var userData = JSON.parse(fs.readFileSync('UserData.json', 'utf8'));
+var userData = JSON.parse(fs.readFileSync('userData.json', 'utf8'));
 
 client.on('ready', () => {
   console.log('Prêt !');
@@ -721,8 +721,7 @@ client.on("message", message => {
 		try {
 			if (!userData[message.author.id]) {
 				userData[message.author.id] = {
-					monnaie = 0,
-					youkaiCollection = []
+					monnaie = 0
 				}
 				fs.writeFile('userData.json', JSON.stringify(userData), (err) => {
 					if (err) {
