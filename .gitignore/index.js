@@ -796,24 +796,21 @@ client.on("message", message => {
 	
 	// =lewdneko
 	if(message.content.startsWith(prefix + "lewdneko")) {
-		var niveau = "A";
 		try {
 			if (message.channel.nsfw) {
-				var randomlewdneko = superagent.get('https://nekos.life/api/v2/img/lewd');
-				niveau += "B";
-				niveau += randomlewdneko.body.url;
-				const lewdneko = new Discord.RichEmbed()
-					.setImage(randomlewdneko.body.url)
+				superagent.get('https://nekos.life/api/v2/img/lewd')
+					.end((err, response) => {
+				const lewdembed = new Discord.RichEmbed()
+					.setImage(response.body.url)
 					.setColor('#FF0000')
-				niveau += "C";
-				message.channel.send(lewdneko);
+				message.channel.send(lewdembed);
 			}
 			else {
 				message.channel.send('Vous ne pouvez pas utiliser cette commande ici.');
 			}
 		}
 		catch {
-			message.channel.send("Erreur" + niveau);
+			message.channel.send("Erreur");
 		}
 	}
 	
