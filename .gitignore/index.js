@@ -801,6 +801,7 @@ client.on("message", message => {
 			if (message.channel.nsfw) {
 				var randomlewdneko = superagent.get('https://nekos.life/api/v2/img/lewd');
 				niveau += "B";
+				niveau += randomlewdneko.body.url;
 				const lewdneko = new Discord.RichEmbed()
 					.setImage(randomlewdneko.body.url)
 					.setColor('#FF0000')
