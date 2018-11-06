@@ -786,9 +786,6 @@ client.on("message", message => {
 					if (currentYoukai.getName().startsWith(nameBeginning)) {
 						youkaiList += currentYoukai.getName() + "\n";
 					}
-					else {
-						i = youkaidex.length;
-					}
 				}
 				message.channel.send(youkaiList);
 			}
