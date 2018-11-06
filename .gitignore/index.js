@@ -801,6 +801,7 @@ client.on("message", message => {
 				superagent.get('https://nekos.life/api/v2/img/lewd')
 					.end((err, response) => {
 						const lewdembed = new Discord.RichEmbed()
+							.setTitle("Lewd Neko")
 							.setImage(response.body.url)
 							.setColor('#FF0000')
 						message.channel.send(lewdembed);
