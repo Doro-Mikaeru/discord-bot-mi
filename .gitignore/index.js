@@ -364,7 +364,7 @@ var youkaidex = [
 	new Youkai("Mōki", "ravage les cimetières pour se repaître des têtes des cadavres quand il n'a pas trouvé assez d'offrandes"),
 	new Youkai("Mokumokuren", "esprit habitant les shōji (les murs et les portes coulissantes en papier)"),
 	new Youkai("Momijigari", "femme-démon du mont Togakushi"),
-	new Youkai("Momonjii", "si on le rencontre, on est sûr de tomber malade
+	new Youkai("Momonjii", "si on le rencontre, on est sûr de tomber malade"),
 	new Youkai("Mononoke", "Esprits-vengeurs. Autre nom donné aux yōkai"),
 	new Youkai("Morinji-no-kama", "autre nom pour Bunbuku Chagama, le tanuki-théière"),
 	new Youkai("Mōryō", "yōkai qui dévore les cadavres"),
@@ -392,7 +392,7 @@ var youkaidex = [
 	new Youkai("Ningyō no Rei", "esprit d'une poupée"),
 	new Youkai("Ninko", "esprit-renard invisible"),
 	new Youkai("Ninmenju", "arbre qui pousse dans les cavités des montagnes reculées, avec des fleurs qui ressemblent à des visages humains"),
-	new Youkai("Nobi", "feu spectral
+	new Youkai("Nobi", "feu spectral"),
 	new Youkai("Nobiagari", "plus on le regarde, plus il grandit"),
 	new Youkai("Nobusuma", "Mur surnaturel ou monstrueux écureuil volant selon les sources"),
 	new Youkai("Nodeppō", "il se tient perché sur un arbre et exhale une espèce de chauve-souris contre les promeneurs sur les sentiers"),
