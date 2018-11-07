@@ -795,7 +795,7 @@ client.on("message", message => {
 	};
 	
 	// =lewdneko
-	if(message.content.startsWith(prefix + "lewdneko")) {
+	/*if(message.content.startsWith(prefix + "lewdneko")) {
 		try {
 			if (message.channel.nsfw) {
 				superagent.get('https://nekos.life/api/v2/img/lewd')
@@ -817,7 +817,7 @@ client.on("message", message => {
 		catch {
 			message.channel.send("Erreur");
 		}
-	}
+	}*/
 	
 	// =pokemon-artwork
 	if(message.content.startsWith(prefix + "pokemon-artwork")) {
