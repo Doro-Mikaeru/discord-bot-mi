@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const { Client, Attachment } = require('discord.js');
 const client = new Discord.Client();
-const superagent = require("snekfetch"); // utile pour lewdneko
+var superagent = require("snekfetch"); // utile pour lewdneko
 
 // Récupérer les données des utilisateurs qui se trouvent dans le fichier UserData.json
 //var fs = require('fs');
@@ -800,9 +800,12 @@ client.on("message", message => {
 			if (message.channel.nsfw) {
 				superagent.get('https://nekos.life/api/v2/img/lewd')
 					.end((err, response) => {
+						if (err) {
+							message.channel.send("Erreur avec superagent.get");
+						}
 						const lewdembed = new Discord.RichEmbed()
 							.setTitle("Lewd Neko")
-							//.setImage(response.body.url)
+							.setImage(response.body.url)
 							.setColor('#FF0000')
 						message.channel.send(lewdembed);
 					})
